@@ -8,7 +8,8 @@ const app = express()
 const port = 3001
 var cors = require('cors')
 app.use(cors({
-    origin: "*"
+    origin: "*",
+    credentials : false
 }))
 app.use(express.json())
 
